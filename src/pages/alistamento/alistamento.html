@@ -1,0 +1,47 @@
+<template>
+  <require from="../../templates/template-centralizado.html"></require>
+  <require from="../../modules/campo/campo-email.html"></require>
+  <require from="../../modules/campo/campo-senha.html"></require>
+  <require from="../../modules/campo/campo-selecao.html"></require>
+  <require from="../../modules/campo/campo-texto.html"></require>
+
+  <template-centralizado>
+    <div class="col-lg-5">
+      <div class="card shadow-lg border-0 rounded-lg mt-5">
+        <div class="card-header">
+          <h3 class="text-center font-weight-light my-4">Alistamento</h3>
+        </div>
+        <div class="card-body">
+          <form>
+            <campo-texto
+              id="nome"
+              nome="Nome"
+              dica="Informe seu nome"
+            ></campo-texto>
+            <campo-email
+              id="email"
+              nome="Email"
+              dica="Informe seu e-mail"
+            ></campo-email>
+            <campo-senha
+              id="senha"
+              nome="Senha"
+              dica="Informe sua senha"
+            ></campo-senha>
+            <div
+              class="form-group d-flex align-items-center justify-content-between mt-4 mb-0"
+            >
+              <a class="small" href="/esqueceu-senha">Esqueceu a senha?</a>
+              <a class="btn btn-primary" href="/">Alistar-se</a>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer text-center">
+          <div class="small">
+            <a href="/login">Já se alistou? Realize o login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template-centralizado>
+</template>

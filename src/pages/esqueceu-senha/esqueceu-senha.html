@@ -1,0 +1,40 @@
+<template>
+  <require from="../../templates/template-centralizado.html"></require>
+  <require from="../../modules/campo/campo-email.html"></require>
+  <require from="../../modules/campo/campo-senha.html"></require>
+  <require from="../../modules/campo/campo-selecao.html"></require>
+
+  <template-centralizado>
+    <div class="col-lg-5">
+      <div class="card shadow-lg border-0 rounded-lg mt-5">
+        <div class="card-header">
+          <h3 class="text-center font-weight-light my-4">Esqueceu a senha?</h3>
+        </div>
+        <div class="card-body">
+          <div class="small mb-3 text-muted">
+            Informe seu endereço de e-mail e enviaremos um link para resetar sua
+            senha
+          </div>
+          <form>
+            <campo-email
+              id="email"
+              nome="Email"
+              dica="Informe seu e-mail"
+            ></campo-email>
+            <div
+              class="form-group d-flex align-items-center justify-content-between mt-4 mb-0"
+            >
+              <a class="small" href="/login">Voltar ao Login</a>
+              <a class="btn btn-primary" href="/">Resetar a senha</a>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer text-center">
+          <div class="small">
+            <a href="/alistamento">Não se alistou? Aliste-se!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template-centralizado>
+</template>
