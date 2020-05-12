@@ -39,6 +39,11 @@ export class App {
         route: "transacoes",
         moduleId: PLATFORM.moduleName("pages/transacoes/transacoes"),
         name: "transacoes"
+      },
+      {
+        route: "configuracoes",
+        moduleId: PLATFORM.moduleName("pages/configuracoes/configuracoes"),
+        name: "configuracoes"
       }
     ]);
   }
