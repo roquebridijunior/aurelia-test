@@ -1,3 +1,8 @@
+import { PLATFORM } from "aurelia-framework";
+
+require("bootstrap/dist/css/bootstrap.min.css");
+require("bootstrap");
+
 export class App {
   configureRouter(config, router) {
     config.title = "Contacts";
@@ -6,13 +11,18 @@ export class App {
     config.map([
       {
         route: "",
-        moduleId: "modules/contact-list/contact-list",
+        moduleId: PLATFORM.moduleName("modules/contact-list/contact-list"),
         title: "contact-list"
       },
       {
         route: "contacts/:id",
-        moduleId: "modules/contact/contact",
+        moduleId: PLATFORM.moduleName("modules/contact/contact"),
         name: "contacts"
+      },
+      {
+        route: "login",
+        moduleId: PLATFORM.moduleName("modules/login/login"),
+        name: "login"
       }
     ]);
 
