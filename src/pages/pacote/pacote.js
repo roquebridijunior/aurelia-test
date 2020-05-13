@@ -1,4 +1,4 @@
-export class Loja {
+export class Pacote {
   constructor() {
     this.message = "ct.";
   }

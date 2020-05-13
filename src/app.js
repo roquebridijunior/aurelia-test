@@ -31,9 +31,16 @@ export class App {
         name: "alistamento"
       },
       {
-        route: "loja",
-        moduleId: PLATFORM.moduleName("pages/loja/loja"),
+        route: "pacotes",
+        moduleId: PLATFORM.moduleName("pages/pacotes/pacotes"),
         name: "loja"
+      },
+      {
+        route: "minhas-transacoes",
+        moduleId: PLATFORM.moduleName(
+          "pages/minhas-transacoes/minhas-transacoes"
+        ),
+        name: "transacoes"
       },
       {
         route: "transacoes",
@@ -41,9 +48,19 @@ export class App {
         name: "transacoes"
       },
       {
-        route: "configuracoes",
-        moduleId: PLATFORM.moduleName("pages/configuracoes/configuracoes"),
-        name: "configuracoes"
+        route: "transacao/:id",
+        moduleId: PLATFORM.moduleName("pages/transacao/transacao"),
+        name: "transacao"
+      },
+      {
+        route: "saldos",
+        moduleId: PLATFORM.moduleName("pages/saldos/saldos"),
+        name: "saldos"
+      },
+      {
+        route: "pacote/:id",
+        moduleId: PLATFORM.moduleName("pages/pacote/pacote"),
+        name: "pacote"
       }
     ]);
   }
